@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/normal_height"
+        android:gravity="center"
+        android:text="@string/main_title"
+        android:textColor="@color/text_color"
+        android:textSize="@dimen/title_size"
+        android:textStyle="bold" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/border_height"
+        android:background="@color/border_color" />
+
+    <include
+        layout="@layout/main_analyze_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <TextView
+        android:id="@+id/upload_image"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_height"
+        android:layout_margin="@dimen/content_padding"
+        android:background="@drawable/button_background"
+        android:gravity="center"
+        android:text="@string/upload_image"
+        android:textColor="@color/white"
+        android:textSize="@dimen/title_size"
+        android:textStyle="bold" />
+
+
+</LinearLayout>
